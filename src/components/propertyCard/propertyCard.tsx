@@ -6,13 +6,16 @@ const renderData = (data: any) => {
   return <img src={`/${data}`} alt="property" />;
 };
 
-const PropertyCard = ({ endDate, id, images, name, price, rating, startDate, views, description }: IProperty) => {
-  console.log(id,price,views,description)
+const PropertyCard = ({ endDate, id, images, name, price, rating, startDate, views, description, isMostLiked }: IProperty) => {
+  console.log(id, price, views, description)
   return (
     <div className="propertyCard">
       <div className="propertyCard__header">
         <div className="propertyCard__header-left">
-          <span>Most Liked</span>
+          {
+            isMostLiked &&
+            <span>Most Liked</span>
+          }
         </div>
         <div className="propertyCard__header-right">
           <img src="/icons/heart.svg" alt="Like" />

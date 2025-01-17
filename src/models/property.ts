@@ -8,4 +8,5 @@ export interface IProperty {
   rating: number;
   startDate: string;
   endDate: string;
+  isMostLiked:boolean
 }
