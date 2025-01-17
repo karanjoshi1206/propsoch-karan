@@ -10,7 +10,6 @@ const PropertyDetails = () => {
   if (!property) {
     return <div>Property not found</div>;
   }
-  // return <h1>hello</h1>
   return <PropertyInfo property={property} />;
 };
 
