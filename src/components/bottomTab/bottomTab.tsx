@@ -4,7 +4,7 @@ const BottomTab = () => {
     return <>
         <ul className="tabNav">
 
-            {TAB_NAV_LINKS.map((tab, idx) => {
+            {TAB_NAV_LINKS.map((tab) => {
                 return <li className={tab.isActive ? "active" : ""} key={tab.title}>
                     <img src={`/icons/${tab.icon}`} />
                     <p>{tab.title}</p>
