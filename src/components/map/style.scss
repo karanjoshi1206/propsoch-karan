@@ -1,0 +1,20 @@
+.map {
+  position: relative;
+  height: 256px;
+  &-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #feebdb;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ff7504;
+  }
+}

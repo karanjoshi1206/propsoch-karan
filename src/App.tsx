@@ -1,14 +1,12 @@
 import "./App.css";
 import BottomTab from "./components/bottomTab/bottomTab";
-import PropertyListings from "./components/propertyListings/propertyListings";
+import AppRouter from "./router";
 
 function App() {
   return (
-    <div className="main">
-      <div className="main_wrapper">
-        <PropertyListings />
-      </div>
-      <BottomTab/>
+    <div>
+      <AppRouter />
+      <BottomTab />
     </div>
   );
 }

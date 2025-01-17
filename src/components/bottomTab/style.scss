@@ -1,27 +1,50 @@
 .tabNav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 16px 24px;
-    z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 16px 24px;
+  z-index: 10;
 
-    li {
-        list-style: none;
-        align-self: center;
-        display: grid;
-        place-items: center;
-        font-weight: 400;
-        color: #757575;
+  li,
+  a {
+    list-style: none;
+    align-self: center;
+    display: grid;
+    place-items: center;
+    font-weight: 400;
+    text-decoration: none;
+    color: #757575;
+    font-size: 12px;
+    margin-top: 2px;
 
-        &.active {
-            color: #E57601;
-            font-weight: 600;
-        }
+    &.active {
+      color: var(--primary-color);
+      font-weight: 600;
     }
+  }
+  p {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    bottom: 12px;
+    margin: auto;
+    padding: 12px 20px;
+    height: 60px;
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+    li,
+    a,
+    p {
+      font-size: 14px;
+    }
+  }
 }

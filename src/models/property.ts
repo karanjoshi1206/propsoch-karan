@@ -8,5 +8,21 @@ export interface IProperty {
   rating: number;
   startDate: string;
   endDate: string;
-  isMostLiked:boolean
+  isMostLiked: boolean;
+  location?: string;
+  address: string;
+  lat: number;
+  lng: number;
+  nearBy?: INearBy;
+  ammenties?: string[];
+}
+
+export interface ILocation {
+  address: string;
+  lat: number;
+  lng: number;
+}
+
+export interface INearBy {
+  [key: string]: number;
 }

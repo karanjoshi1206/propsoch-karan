@@ -3,19 +3,28 @@ import { IProperty } from "../models/property";
 export const PROPERTY_DATA: IProperty[] = [
   {
     id: 1,
-    name: "Property 1",
+    name: "Sushant Lok 2, Gurgaon",
     description: "This is the description of Property 1",
-    price: 1000000,
+    price: 15000000,
     images: ["properties/prop1.jpeg", "properties/prop2.jpeg", "properties/prop3.jpeg"],
     views: 100,
     rating: 4,
     startDate: "Apr 5",
     endDate: "Apr 10",
-    isMostLiked: true
+    isMostLiked: true,
+    location: "Sector 57, Gurgaon",
+    address: "Sector 57, Gurgaon, Haryana, India",
+    lat: 28.4595,
+    lng: 77.0266,
+    nearBy: {
+      school: 2,
+      hospital: 3
+    },
+    ammenties: ["Swimming Pool", "Gym", "Club House"]
   },
   {
     id: 2,
-    name: "Property 2",
+    name: "Rainbow Heights, HSR",
     description: "This is the description of Property 2",
     price: 2000000,
     images: ["properties/prop3.jpeg", "properties/prop4.jpeg"],
@@ -23,12 +32,20 @@ export const PROPERTY_DATA: IProperty[] = [
     rating: 3,
     startDate: "March 9",
     endDate: "March 15",
-    isMostLiked: false
-
+    isMostLiked: false,
+    location: "Sector 45, Gurgaon",
+    address: "Sector 45, Gurgaon, Haryana, India",
+    lat: 28.4522,
+    lng: 77.0717,
+    nearBy: {
+      school: 1,
+      hospital: 2
+    },
+    ammenties: ["Parking", "Garden", "24/7 Security"]
   },
   {
     id: 3,
-    name: "Property 3",
+    name: "Walden, Colorado, US",
     description: "This is the description of Property 3",
     price: 1500000,
     images: ["properties/prop1.jpeg", "properties/prop3.jpeg"],
@@ -36,11 +53,20 @@ export const PROPERTY_DATA: IProperty[] = [
     rating: 4.5,
     startDate: "March 1",
     endDate: "March 5",
-    isMostLiked: false
+    isMostLiked: false,
+    location: "Sector 50, Gurgaon",
+    address: "Sector 50, Gurgaon, Haryana, India",
+    lat: 28.4508,
+    lng: 77.0642,
+    nearBy: {
+      school: 3,
+      hospital: 1
+    },
+    ammenties: ["Playground", "WiFi", "Power Backup"]
   },
   {
     id: 4,
-    name: "Property 4",
+    name: "Poggibonsi, Italy",
     description: "This is the description of Property 4",
     price: 1800000,
     images: ["properties/prop3.jpeg", "properties/prop4.jpeg"],
@@ -48,7 +74,16 @@ export const PROPERTY_DATA: IProperty[] = [
     rating: 4,
     startDate: "March 10",
     endDate: "March 15",
-    isMostLiked: true
+    isMostLiked: true,
+    location: "Sector 31, Gurgaon",
+    address: "Sector 31, Gurgaon, Haryana, India",
+    lat: 28.447,
+    lng: 77.0579,
+    nearBy: {
+      school: 2,
+      hospital: 2
+    },
+    ammenties: ["Swimming Pool", "CCTV", "Club House"]
   },
   {
     id: 5,
@@ -60,7 +95,16 @@ export const PROPERTY_DATA: IProperty[] = [
     rating: 3.8,
     startDate: "Feb 20",
     endDate: "Feb 25",
-    isMostLiked: false
+    isMostLiked: false,
+    location: "Sector 40, Gurgaon",
+    address: "Sector 40, Gurgaon, Haryana, India",
+    lat: 28.4622,
+    lng: 77.0595,
+    nearBy: {
+      school: 4,
+      hospital: 3
+    },
+    ammenties: ["Gym", "Park", "Elevators"]
   },
   {
     id: 6,
@@ -72,7 +116,16 @@ export const PROPERTY_DATA: IProperty[] = [
     rating: 5,
     startDate: "Jan 1",
     endDate: "Jan 10",
-    isMostLiked: false
+    isMostLiked: false,
+    location: "Sector 56, Gurgaon",
+    address: "Sector 56, Gurgaon, Haryana, India",
+    lat: 28.435,
+    lng: 77.0746,
+    nearBy: {
+      school: 2,
+      hospital: 5
+    },
+    ammenties: ["AC Rooms", "Banquet Hall", "Pet Friendly"]
   },
   {
     id: 7,
@@ -84,7 +137,16 @@ export const PROPERTY_DATA: IProperty[] = [
     rating: 4.2,
     startDate: "Dec 10",
     endDate: "Dec 20",
-    isMostLiked: true
+    isMostLiked: true,
+    location: "Sector 43, Gurgaon",
+    address: "Sector 43, Gurgaon, Haryana, India",
+    lat: 28.467,
+    lng: 77.0671,
+    nearBy: {
+      school: 1,
+      hospital: 1
+    },
+    ammenties: ["Terrace", "Water Supply", "Fire Safety"]
   },
   {
     id: 8,
@@ -96,102 +158,100 @@ export const PROPERTY_DATA: IProperty[] = [
     rating: 4.7,
     startDate: "Nov 15",
     endDate: "Nov 20",
-    isMostLiked: false
+    isMostLiked: false,
+    location: "Sector 48, Gurgaon",
+    address: "Sector 48, Gurgaon, Haryana, India",
+    lat: 28.4476,
+    lng: 77.0488,
+    nearBy: {
+      school: 2,
+      hospital: 2
+    },
+    ammenties: ["Swimming Pool", "Gym", "Club House"]
   },
   {
     id: 9,
     name: "Property 9",
     description: "This is the description of Property 9",
-    price: 1350000,
-    images: ["properties/prop2.jpeg", "properties/prop3.jpeg"],
-    views: 130,
-    rating: 4.1,
+    price: 1900000,
+    images: ["properties/prop1.jpeg", "properties/prop3.jpeg"],
+    views: 225,
+    rating: 4.5,
     startDate: "Oct 5",
-    endDate: "Oct 10",
-    isMostLiked: false
-  },
-  {
-    id: 10,
-    name: "Property 10",
-    description: "This is the description of Property 10",
-    price: 1350000,
-    images: ["properties/prop2.jpeg", "properties/prop3.jpeg"],
-    views: 130,
-    rating: 4.1,
-    startDate: "Oct 5",
-    endDate: "Oct 10",
-    isMostLiked: false
+    endDate: "Oct 12",
+    isMostLiked: true,
+    location: "Sector 49, Gurgaon",
+    address: "Sector 49, Gurgaon, Haryana, India",
+    lat: 28.4501,
+    lng: 77.0529,
+    nearBy: {
+      school: 3,
+      hospital: 2
+    },
+    ammenties: ["Jogging Track", "Backup Generator", "WiFi"]
   },
   {
     id: 11,
     name: "Property 11",
     description: "This is the description of Property 11",
-    price: 1350000,
+    price: 1400000,
     images: ["properties/prop2.jpeg", "properties/prop3.jpeg"],
-    views: 130,
-    rating: 4.1,
-    startDate: "Oct 5",
-    endDate: "Oct 11",
-    isMostLiked: false
+    views: 180,
+    rating: 4.3,
+    startDate: "Aug 20",
+    endDate: "Aug 25",
+    isMostLiked: false,
+    location: "Sector 39, Gurgaon",
+    address: "Sector 39, Gurgaon, Haryana, India",
+    lat: 28.4651,
+    lng: 77.0553
   },
   {
     id: 12,
     name: "Property 12",
     description: "This is the description of Property 12",
-    price: 1350000,
-    images: ["properties/prop2.jpeg", "properties/prop3.jpeg"],
-    views: 130,
-    rating: 4.1,
-    startDate: "Oct 5",
-    endDate: "Oct 11",
-    isMostLiked: false
+    price: 2400000,
+    images: ["properties/prop1.jpeg", "properties/prop2.jpeg"],
+    views: 280,
+    rating: 4.8,
+    startDate: "Jul 10",
+    endDate: "Jul 15",
+    isMostLiked: true,
+    location: "Sector 42, Gurgaon",
+    address: "Sector 42, Gurgaon, Haryana, India",
+    lat: 28.4673,
+    lng: 77.0831
   },
   {
     id: 13,
     name: "Property 13",
     description: "This is the description of Property 13",
-    price: 1350000,
-    images: ["properties/prop2.jpeg", "properties/prop3.jpeg"],
-    views: 130,
-    rating: 4.1,
-    startDate: "Oct 5",
-    endDate: "Oct 11",
-    isMostLiked: false
+    price: 1750000,
+    images: ["properties/prop4.jpeg", "properties/prop3.jpeg"],
+    views: 190,
+    rating: 4.6,
+    startDate: "Jun 15",
+    endDate: "Jun 20",
+    isMostLiked: false,
+    location: "Sector 36, Gurgaon",
+    address: "Sector 36, Gurgaon, Haryana, India",
+    lat: 28.4805,
+    lng: 77.0568
   },
   {
     id: 14,
     name: "Property 14",
     description: "This is the description of Property 14",
-    price: 1350000,
+    price: 1900000,
     images: ["properties/prop2.jpeg", "properties/prop3.jpeg"],
-    views: 130,
-    rating: 4.1,
-    startDate: "Oct 5",
-    endDate: "Oct 11",
-    isMostLiked: false
-  },
-  {
-    id: 15,
-    name: "Property 15",
-    description: "This is the description of Property 15",
-    price: 1350000,
-    images: ["properties/prop2.jpeg", "properties/prop3.jpeg"],
-    views: 130,
-    rating: 4.1,
-    startDate: "Oct 5",
-    endDate: "Oct 11",
-    isMostLiked: false
-  },
-  {
-    id: 16,
-    name: "Property 16",
-    description: "This is the description of Property 16",
-    price: 1350000,
-    images: ["properties/prop2.jpeg", "properties/prop3.jpeg"],
-    views: 130,
-    rating: 4.1,
-    startDate: "Oct 5",
-    endDate: "Oct 11",
-    isMostLiked: false
+    views: 210,
+    rating: 4.4,
+    startDate: "May 5",
+    endDate: "May 10",
+    isMostLiked: true,
+    location: "Sector 44, Gurgaon",
+    address: "Sector 44, Gurgaon, Haryana, India",
+    lat: 28.4712,
+    lng: 77.0728
   }
 ];

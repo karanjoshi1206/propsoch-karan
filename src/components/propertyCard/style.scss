@@ -1,5 +1,5 @@
 .propertyCard {
-  height: 340px;
+  min-height: 340px;
   position: relative;
 
   &__imageContainer {
@@ -31,6 +31,11 @@
         border-radius: 16px;
       }
     }
+    &-right {
+      img {
+        cursor: pointer;
+      }
+    }
   }
 
   &__stats {
@@ -41,10 +46,48 @@
       display: flex;
       align-items: center;
       span {
-        font-size: 12px;
-        color: #444444;
+        font-size: 14px;
         margin-left: 4px;
       }
+      img {
+        height: 14px;
+        width: 14px;
+        object-fit: cover;
+      }
+      &__views {
+        font-weight: 300;
+        line-height: 12px;
+
+        color: rgba(136, 136, 136, 1) !important;
+      }
+
+      &__ratings {
+        display: flex;
+        align-items: center;
+        color: rgba(229, 118, 1, 1);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 12px;
+        &.good {
+          color: rgba(39, 135, 23, 1);
+        }
+      }
+    }
+  }
+
+  &__info {
+    padding: 8px;
+    &-title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 18px;
+      color: rgba(0, 0, 0, 1);
+    }
+    &-date {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 15px;
+      color: rgba(136, 136, 136, 1);
     }
   }
 }

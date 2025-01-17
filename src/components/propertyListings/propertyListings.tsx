@@ -10,16 +10,11 @@ const PropertyListings = () => {
   const observerRef = useRef<HTMLDivElement | null>(null);
 
   const loadMoreProperties = () => {
-    console.log("log:: load")
     setTimeout(() => {
-
       setProperties((prevProperties) => {
-        const nextProperties = PROPERTY_DATA.slice(
-          prevProperties.length,
-          prevProperties.length + 10
-        );
+        const nextProperties = PROPERTY_DATA.slice(prevProperties.length, prevProperties.length + 10);
         if (nextProperties.length === 0) {
-          setHasMore(false); // No more properties to load
+          setHasMore(false);
         }
         return [...prevProperties, ...nextProperties];
       });
@@ -49,19 +44,24 @@ const PropertyListings = () => {
   }, [hasMore]);
 
   return (
-    <div className="propertySlides_container">
-      {properties.map((property, index) => (
-        <PropertyCard key={index} {...property} />
-      ))}
-
-      {/* Loader element */}
-      {hasMore && <div ref={observerRef} className="loader">Loading more properties...</div>}
+    <>
+      <div className="propertySlides_container">
+        {properties.map((property, index) => (
+          <PropertyCard key={index} {...property} />
+        ))}
+      </div>
+      {hasMore && (
+        <div ref={observerRef} className="loader">
+          <div className="spinner"></div>
+          <p>Loading more properties...</p>
+        </div>
+      )}
       {!hasMore && (
-        <p style={{ textAlign: "center" }}>
-          <b>Yay! You have seen it all</b>
+        <p className="endMessage">
+          <b>🎉 Yay! You have seen it all 🎉</b>
         </p>
       )}
-    </div>
+    </>
   );
 };
 
