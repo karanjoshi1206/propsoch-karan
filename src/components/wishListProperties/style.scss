@@ -1,0 +1,21 @@
+.noData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80svh;
+  padding: 0 20px;
+  h3 {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin: 0;
+    text-align: center;
+    line-height: normal;
+  }
+  p {
+    font-size: 10px;
+    margin: 0;
+    text-align: center;
+    line-height: normal;
+  }
+}
