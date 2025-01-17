@@ -33,5 +33,16 @@ export const PROPERTY_DATA: IProperty[] = [
     rating: 3,
     startDate: "March 1",
     endDate: "March 5"
+  },
+  {
+    id: 4,
+    name: "Property 4",
+    description: "This is the description of Property 2",
+    price: 2000000,
+    images: ["properties/prop4.jpeg", "properties/prop4.jpeg"],
+    views: 200,
+    rating: 4,
+    startDate: "March 1",
+    endDate: "March 5"
   }
 ];

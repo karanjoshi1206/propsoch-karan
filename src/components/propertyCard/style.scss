@@ -1,6 +1,5 @@
 .propertyCard {
   height: 340px;
-  min-width: 210px;
   position: relative;
 
   &__imageContainer {
@@ -14,6 +13,7 @@
       object-fit: cover;
     }
   }
+
   &__header {
     position: absolute;
     top: 8px;

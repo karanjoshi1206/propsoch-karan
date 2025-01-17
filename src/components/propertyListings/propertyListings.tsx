@@ -4,7 +4,7 @@ import "./style.scss";
 
 const PropertyListings = () => {
   return (
-    <div className="properySlides_container">
+    <div className="propertySlides_container">
       {PROPERTY_DATA.map((property) => (
         <PropertyCard {...property} />
       ))}

@@ -1,14 +1,7 @@
-.properySlides_container {
-
-  display: flex;
-  justify-content: space-between;
+.propertySlides_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Dynamically adjusts items per row */
   gap: 10px;
-  flex-wrap: wrap;
-
-  .property_slide {
-    background-color: red;
-    // height: 500px;
-    // width: 100%;
-    box-sizing: border-box;
-  }
+  padding: 10px;
 }
+
