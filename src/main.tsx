@@ -3,9 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/swiper-bundle.css';
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

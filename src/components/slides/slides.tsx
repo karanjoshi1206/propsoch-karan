@@ -1,5 +1,6 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import {Swiper} from 'swiper/react';
+import {  Pagination } from 'swiper/modules';
+import { SwiperSlide } from 'swiper/react';
 
 interface ISlidesProps {
   data?: any[];
