@@ -1,0 +1,14 @@
+.properySlides_container {
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  .property_slide {
+    background-color: red;
+    // height: 500px;
+    // width: 100%;
+    box-sizing: border-box;
+  }
+}
