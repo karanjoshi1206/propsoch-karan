@@ -7,6 +7,7 @@ const renderData = (data: any) => {
 };
 
 const PropertyCard = ({ endDate, id, images, name, price, rating, startDate, views, description }: IProperty) => {
+  console.log(id,price,views,description)
   return (
     <div className="propertyCard">
       <div className="propertyCard__header">
